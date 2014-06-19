@@ -1,0 +1,352 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+  outline: none !important;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.banner h1 {
+  color: #ffffff;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.navList {
+  background-color:rgba(0,0,0,.7);
+  width: 100%;
+  height: 65px;
+  margin-bottom: 15%;
+  position: absolute;
+  top: 528px;
+}
+
+.headerStick {
+  position: fixed;
+  background-color: rgba(0,0,0,.6);
+}
+
+.navList ul {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  color: #ffffff;
+}
+
+.navList li {
+  float: left;
+}
+
+.navList li:nth-child(1){
+  width: 15%;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 45px;
+  line-height: 65px;
+}
+
+.navList li:nth-child(2){
+  width: 15%;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 25px;
+  line-height: 65px;
+  border-right: 1px solid #ccc;
+  color: #FF7B7B;
+}
+
+.blackOut {
+  border: 0px !important;
+}
+
+.blackOut p {
+  color:rgba(0,0,0,0);
+}
+
+.navList li:nth-child(3){
+  width: 40%;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 25px;
+  line-height: 65px;
+  color: #FF7B7B;
+}
+
+.navList li:nth-child(4){
+  width: 25%;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 19px;
+  line-height: 65px;
+}
+
+.banner {
+  background: url(../img/sparkBG.jpg) no-repeat center center fixed;
+  width: 100%;
+  height: 1000px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: auto;
+}
+
+.funded {
+  background-color: #FBFBFB;
+  width: 100%;
+  height: 500px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+}
+
+.past{
+  background-color: ;
+  width: 100%;
+  height: 700px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+  background: url(../img/boh4.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.projects{
+  background-color: #FBFBFB;
+  width: 100%;
+  height: 900px;
+
+}
+/***************************
+****************************
+About section 
+****************************
+***************************/
+.about {
+  list-style-type: none;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about li {
+  width: 33.33%;
+  float: left;
+  padding-top: 40px;
+}
+
+.about li h1 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 35px;
+
+}
+
+.about li p {
+  text-align: center;
+  font-size: 20px;
+  width: 95%;
+  margin: 0 auto;
+}
+.circle {
+  margin: 40px auto 0px;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border: 100%;
+  border-radius: 100%;
+}
+
+.check {
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.marker {
+  margin-left: 55px;
+  margin-top: 40px;
+}
+
+.lock {
+  margin-left: 55px;
+  margin-top: 40px;
+}
+/***************************
+****************************
+Funded section 
+****************************
+***************************/
+
+/***************************
+****************************
+projects section 
+****************************
+***************************/
+.projectList {
+  list-style-type: none;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.projectList li {
+  float: left;
+  width: 33.33%;
+  height: 50%;
+}
+
+.projectBlock {
+  list-style-type: none;
+  width: 90%;
+  height: 90%;
+  margin: 10px auto;
+  border:3px solid #ccc;
+  border-radius: 5%;
+}
+
+.projectBlock li {
+  float: left;
+}
+
+.projectBlock li:nth-child(1){
+  width: 10%;
+  height: 100%;
+}
+
+.projectBlock li:nth-child(2){
+  width: 80%;
+  height: 100%;
+
+}
+
+.projectBlock li:nth-child(3){
+  width: 10%;
+  height: 100%;
+}
+
+.projectPicture {
+  width: 275px;
+  height: 275px;
+  border: 2px solid #ccc;
+  border-radius: 100%;
+  margin: 50px auto;
+}
+
+
+.statsContainer {
+  width: 32.5% !important;
+  height: 45px !important;
+  /* background-color: green !important; */
+  margin-top: -19px !important;
+  border-right: 2px solid #ccc;
+  float: left;
+}
+.statsContainerLast {
+  width: 32.5% !important;
+  height: 45px !important;
+  /* background-color: green !important; */
+  margin-top: -19px !important;
+  float: left;
+}
+
+.statsContainer p, .statsContainerLast p  {
+  color: #ccc;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.statsContainer strong, .statsContainerLast strong  {
+  color: #888;
+  font-size: 20px;
+  text-align: center;
+}
+
+.progressBar {
+  width: 10px;
+  height: 75%;
+  margin: 20px auto;
+  background-color: rgba(122, 122, 122, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.groupStats {
+  margin-right: -20px;
+}
+
+.progressFunds {
+  margin-top: -15px;
+  color: #81F786;
+  font-size: 15px;
+  margin-left: 2px;
+  display: block;
+}
+
+.progressShrink {
+  margin-top: 40px;
+}
+
+.progressEquity {
+ margin-top: 18px;
+ color: #819DF7;
+ font-size: 15px;
+ margin-left: -6px;
+ display: block;
+ margin-bottom: -11px;
+}
+.fluidGreen {
+  width: 98%;
+  height: 46%;
+  background-color: #81F786;
+  margin-top: 170px;
+}
+
+.fluidBlue {
+  width: 98%;
+  height: 46%;
+  background-color: #819DF7;
+ 
+}
+
+.projectPicture img {
+  width: 275px;
+  height: 275px;
+  border-radius: 100%;
+}
+
+.projectTitle {
+  text-align: center;
+  margin-bottom: -35px;
+  margin-top: 14px;
+  color: #919191;
+  font-weight: 500;
+  /* border-bottom: 1px solid #919191; */
+  /* width: 67px; */
+}
+
+
+
+footer {
+  background: url(../img/sparkBG.jpg) no-repeat center center fixed;
+  width: 100%;
+  height: 300px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
