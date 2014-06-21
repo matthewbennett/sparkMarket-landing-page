@@ -30,9 +30,9 @@ body {
 }
 
 .navList {
-  background-color:rgba(0,0,0,.7);
+  background-color:transparent;
   width: 100%;
-  height: 65px;
+  height: 50px;
   margin-bottom: 15%;
   position: absolute;
   top: 528px;
@@ -55,21 +55,20 @@ body {
 }
 
 .navList li:nth-child(1){
-  width: 15%;
+  width: 49%;
   text-align: left;
-  margin-left: 10px;
-  font-size: 45px;
-  line-height: 65px;
+  font-size: 35px;
+  line-height: 50px;
+  padding-left: 10px;
 }
 
 .navList li:nth-child(2){
-  width: 15%;
+  width: 49%;
   text-align: right;
   padding-right: 10px;
-  font-size: 25px;
-  line-height: 65px;
-  border-right: 1px solid #ccc;
-  color: #FF7B7B;
+  font-size: 20px;
+  line-height: 50px;
+  color: #fff;
 }
 
 .blackOut {
@@ -80,25 +79,9 @@ body {
   color:rgba(0,0,0,0);
 }
 
-.navList li:nth-child(3){
-  width: 40%;
-  text-align: left;
-  margin-left: 10px;
-  font-size: 25px;
-  line-height: 65px;
-  color: #FF7B7B;
-}
-
-.navList li:nth-child(4){
-  width: 25%;
-  text-align: center;
-  margin-left: 10px;
-  font-size: 19px;
-  line-height: 65px;
-}
 
 .banner {
-  background: url(../img/sparkBG.jpg) no-repeat center center fixed;
+  background: url(../img/sparkBG.jpg) 50% 0 repeat fixed;
   width: 100%;
   height: 1000px;
   -webkit-background-size: cover;
@@ -128,9 +111,9 @@ body {
   background-size: cover;
 }
 .projects{
-  background-color: #FCC168;
+  background-color: #423E38;
   width: 100%;
-  height: 1100px;
+  height: 600px;
   overflow: hidden;
 
 }
@@ -217,7 +200,7 @@ projects section
   width: 90%;
   height: 412px;
   margin: 10px auto;
-  border:3px solid #ccc;
+  border:3px solid #555353;
   border-radius: 5%;
   min-width: 369px;
   background-color: #F3F3F3;
@@ -337,7 +320,7 @@ projects section
   text-align: center;
   margin-bottom: -35px;
   margin-top: 14px;
-  color: #919191;
+  color: rgba(0,0,0,0.57);
   font-weight: 500;
   /* border-bottom: 1px solid #919191; */
   /* width: 67px; */
@@ -449,7 +432,7 @@ span {
   width: 100%;
   height: 40px;
   background-color: rgba(0,0,0,0.6);
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .footerInfo li {
