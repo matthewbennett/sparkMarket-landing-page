@@ -49,11 +49,60 @@ var stickyHeader = {
       });
     }
   };
+
+  var slideShow = {
+    init:function() {
+      this.slideOver();
+    },
+
+    slideOver:function() {
+      //set height of the slides
+      var height = $(window).height();
+      var width = $(window).width();
+      $('.slide').css("height",height);
+      $('.slider').css("height",height);
+      $('.slide').css("width",width);
+      $('.slider').css("width",width);
+
+      //amount of slides 
+      
+      //hide slides inactiveSlides
+      
+        
+
+      //switch slides on interval
+      setInterval(function(){
+        
+      }, 5000);
+    }
+  };
+
+  var showInfo = {
+    init:function() {
+      this.info();
+    },
+
+    info:function() {
+      $(".infoLi").mouseenter(function(){
+        var block = $(this).attr("data-id");
+        if(block == 0) { $(".aboutInfo0").show();}
+        if(block == 1) { $(".aboutInfo1").show();}
+        if(block == 2) { $(".aboutInfo2").show();}
+      });
+      $(".infoLi").mouseleave(function(){
+        $(".aboutInfo0").fadeOut();
+        $(".aboutInfo1").fadeOut();
+        $(".aboutInfo2").fadeOut();
+      });
+    }
+  };
  
 
   (function() {
     setBanner.init();
     stickyHeader.init();
+    slideShow.init();
+    showInfo.init();
 
   }()); 
 
