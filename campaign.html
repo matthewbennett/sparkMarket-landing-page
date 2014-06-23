@@ -18,6 +18,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Main.js -->
     <script src="js/main.js"></script>
+    <script src="js/Chart.js"></script>
         <!-- Fonts & Icons -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <!-- shapeHover -->
@@ -26,14 +27,76 @@
 
   </header>
   <body>
-    <section class="campaignBanner">
-        <div class="galleryWrapper">
-            <div class="gallery"></div>
-            <div class="video"></div>
+    <div class="navListStay">
+            <ul>
+                <li>SparkMarket</li>
+                <li>Sign up | Login</li>
+            </ul>
         </div>
+        <section class="campaignTitle">
+          <h1>Bohemain Guitars</h1>
+          <h3>Guitars built out of old oil cans, new look, classic sound</h3>
+          <ul>
+            <li>
+              <i class="fa fa-map-marker fa-2x"></i>
+              <p>Athens, GA</p>
+            </li>
+            <li>
+              <i class="fa fa-flask fa-2x"></i>
+              <p>Art & Design</p>
+            </li>
+          </ul>
+        </section>
+    <section class="campaignBanner">
+      <ul class="tabs">
+        <li>Overview</li>
+        <li>Profile</li>
+        <li>Comments</li>
+        <li>Updates</li>
+      </ul>
+        <ul class="galleryWrapper">
+          <li class="data">
+            <ul class="dataFlag">
+              <li>INVESTMENT</li>
+              <li>
+                <li>
+                  <canvas id="canvas" height="450" width="450"></canvas>
+
+
+  <script>
+
+    var doughnutData = [
+        {
+          value: 30,
+          color:"#F7464A"
+        },
+        {
+          value : 50,
+          color : "#46BFBD"
+        },
+      ];
+
+  var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+  
+  </script>
+                </li>
+                <h3>20.0%</h3>
+                <p>Maximum Amount</p>
+              </li>
+            </ul>
+          </li>
+          <li class="vids">
+            <iframe src="http://player.vimeo.com/video/97304185" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+          </li>
+        </ul>
     </section>
     <section class="campaignSummary">
-        
+        <ul class="gallery">
+              <li><img src="img/boh1.jpg"></li>
+              <li><img src="img/boh2.jpg"></li>
+              <li><img src="img/boh3.jpg"></li>
+              <li><img src="img/boh4.jpg"></li>
+            </ul>
     </section>
 
   </body>

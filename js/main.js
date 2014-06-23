@@ -90,9 +90,9 @@ var stickyHeader = {
         if(block == 2) { $(".aboutInfo2").show();}
       });
       $(".infoLi").mouseleave(function(){
-        $(".aboutInfo0").fadeOut();
-        $(".aboutInfo1").fadeOut();
-        $(".aboutInfo2").fadeOut();
+        $(".aboutInfo0").fadeOut("fast");
+        $(".aboutInfo1").fadeOut("fast");
+        $(".aboutInfo2").fadeOut("fast");
       });
     }
   };
