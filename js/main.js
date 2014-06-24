@@ -72,13 +72,38 @@ var stickyHeader = {
     }
   };
 
+  var tabs = {
+    init:function() {
+      this.switchTabs();
+    },
+
+    switchTabs:function() {
+      var activeTab = $("#overviewTab");
+      $("#overviewTab").addClass("activeTab");
+      $(".campaignProfile").hide();
+      $(".campaignComments").hide();
+      $(".campaignUpdates").hide();
+
+      $("#profileTab").click(function(){
+        $(activeTab).removeClass("activeTab");
+        activeTab = $("#profileTab");
+        $("#profileTab").addClass("activeTab");
+        $(".campaignSummary").hide();
+        $(".campaignComments").hide();
+        $(".campaignUpdates").hide();
+        $(".campaignProfile").fadeIn("fast");
+
+      });
+    }
+  };
+
  
 
   (function() {
     setBanner.init();
     stickyHeader.init();
-  
     showInfo.init();
+    tabs.init();
 
   }()); 
 
