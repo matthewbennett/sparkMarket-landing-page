@@ -50,32 +50,7 @@ var stickyHeader = {
     }
   };
 
-  var slideShow = {
-    init:function() {
-      this.slideOver();
-    },
 
-    slideOver:function() {
-      //set height of the slides
-      var height = $(window).height();
-      var width = $(window).width();
-      $('.slide').css("height",height);
-      $('.slider').css("height",height);
-      $('.slide').css("width",width);
-      $('.slider').css("width",width);
-
-      //amount of slides 
-      
-      //hide slides inactiveSlides
-      
-        
-
-      //switch slides on interval
-      setInterval(function(){
-        
-      }, 5000);
-    }
-  };
 
   var showInfo = {
     init:function() {
@@ -96,12 +71,13 @@ var stickyHeader = {
       });
     }
   };
+
  
 
   (function() {
     setBanner.init();
     stickyHeader.init();
-    slideShow.init();
+  
     showInfo.init();
 
   }()); 
