@@ -91,8 +91,41 @@ var stickyHeader = {
         $(".campaignSummary").hide();
         $(".campaignComments").hide();
         $(".campaignUpdates").hide();
+        $(".campaignBanner").hide();
         $(".campaignProfile").fadeIn("fast");
+      });
 
+      $("#overviewTab").click(function(){
+        $(activeTab).removeClass("activeTab");
+        activeTab = $("#overviewTab");
+        $("#overviewTab").addClass("activeTab");
+        $(".campaignBanner").fadeIn("fast");
+        $(".campaignSummary").fadeIn("fast");
+        $(".campaignComments").hide();
+        $(".campaignUpdates").hide();
+        $(".campaignProfile").hide();
+      });
+
+      $("#commentsTab").click(function(){
+        $(activeTab).removeClass("activeTab");
+        activeTab = $("#commentsTab");
+        $("#commentsTab").addClass("activeTab");
+        $(".campaignBanner").hide();
+        $(".campaignSummary").hide();
+        $(".campaignComments").fadeIn("fast");
+        $(".campaignUpdates").hide();
+        $(".campaignProfile").hide();
+      });
+
+      $("#updatesTab").click(function(){
+        $(activeTab).removeClass("activeTab");
+        activeTab = $("#updatesTab");
+        $("#updatesTab").addClass("activeTab");
+        $(".campaignBanner").hide();
+        $(".campaignSummary").hide();
+        $(".campaignComments").hide();
+        $(".campaignUpdates").fadeIn("fast");
+        $(".campaignProfile").hide();
       });
     }
   };
