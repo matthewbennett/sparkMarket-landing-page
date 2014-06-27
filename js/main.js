@@ -15,6 +15,13 @@ fullscreen();
 var setBanner = {
   init:function(){
     this.bannerSize();
+    this.setFooter();
+  },
+
+  setFooter:function() {
+    var top = $(document).height();
+    //alert(top);
+    $("#foot").css("top",top - 40);
   },
 
   bannerSize:function() {
