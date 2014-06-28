@@ -160,39 +160,48 @@ var stickyHeader = {
     slide:function(){
       var numberOfSlides = 2;
       var currentSlide = 1;
+      var nextSlide = 2;
+      var lastSlide = 1;
       //set arrow position 
       $("#right").css("left",$(window).width() - 40);
       //set slide width
       $(".slide img").css("width",$(window).width());
       //on right arrow click 
       $("#right").click(function(){
-        $("#slide2").css("left","-1500px");
-        $("#slide2").show();
-        $("#slide1").animate({
+        $("#slide"+nextSlide).css("left","-1500px");
+        $("#slide"+nextSlide).show();
+        $("#slide"+currentSlide).animate({
             "left":"1500px",
           }, 500);
-        $("#slide2").animate({
+        $("#slide"+nextSlide).animate({
             "left":"0px",
           }, 500);
         setTimeout(
           function() 
           {
-            $("#slide1").hide();
+            $("#slide"+currentSlide).hide();
+            //update variables 
+            currentSlide = nextSlide;
+            nextSlide = nextSlide+1;
+            if(nextSlide > numberOfSlides) {
+              nextSlide = 1;
+            }
           }, 501);
       });
       //on left arrow click 
       $("#left").click(function(){
-        $("#slide1").show();
-        $("#slide2").animate({
+        $("#slide"+lastSlide).show();
+        $("#slide"+currentSlide).animate({
             "left":"-1500px",
           }, 500);
-        $("#slide1").animate({
+        $("#slide"+lastSlide).animate({
             "left":"0px",
           }, 500);
         setTimeout(
           function() 
           {
-            $("#slide2").hide();
+            $("#slide"+currentSlide).hide();
+            //upda
           }, 501);
       });
     }
