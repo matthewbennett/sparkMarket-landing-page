@@ -137,6 +137,68 @@ var stickyHeader = {
     }
   };
 
+  var postComment = {
+    init:function() {
+      this.post();
+    },
+
+    post:function(){
+      $(".postButton").click(function(){
+        var text = $(".commentsInput").val();
+        var insert = "<div class='comment'><img src='img/face2.jpg'><h4>Shaun Manic</h4><h5>Just Now</h5><p>"+text+"</p></div>";
+        $(insert).appendTo(".commentsContainer").hide().slideDown();
+        $(".commentsInput").val("");
+      });
+    }
+  };
+
+  var slider = {
+    init:function(){
+      this.slide();
+    },
+
+    slide:function(){
+      var numberOfSlides = 2;
+      var currentSlide = 1;
+      //set arrow position 
+      $("#right").css("left",$(window).width() - 40);
+      //set slide width
+      $(".slide img").css("width",$(window).width());
+      //on right arrow click 
+      $("#right").click(function(){
+        $("#slide2").css("left","-1500px");
+        $("#slide2").show();
+        $("#slide1").animate({
+            "left":"1500px",
+          }, 500);
+        $("#slide2").animate({
+            "left":"0px",
+          }, 500);
+        setTimeout(
+          function() 
+          {
+            $("#slide1").hide();
+          }, 501);
+      });
+      //on left arrow click 
+      $("#left").click(function(){
+        $("#slide1").show();
+        $("#slide2").animate({
+            "left":"-1500px",
+          }, 500);
+        $("#slide1").animate({
+            "left":"0px",
+          }, 500);
+        setTimeout(
+          function() 
+          {
+            $("#slide2").hide();
+          }, 501);
+      });
+    }
+
+  };
+
  
 
   (function() {
@@ -144,6 +206,8 @@ var stickyHeader = {
     stickyHeader.init();
     showInfo.init();
     tabs.init();
+    postComment.init();
+    slider.init();
 
   }()); 
 
