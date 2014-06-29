@@ -214,9 +214,15 @@ var stickyHeader = {
     },
 
     switchPic:function() {
-      $("#thumbPic").click(function(){
+      $(".thumbPic").click(function(){
         var src = $(this).attr('src');
         $("#mainDisplay").fadeOut();
+        setTimeout(
+          function() 
+          {
+           $("#mainDisplay").attr('src',src);
+           $("#mainDisplay").fadeIn();
+          }, 400);
       });
     }
   };

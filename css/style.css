@@ -631,6 +631,10 @@ Campaign section
   /* border-right: 1px solid #fff; */
   background-color: rgba(0,0,0,0.04);
 }
+#mainDisplay {
+  max-width: 66%;
+  max-height: 330px;
+}
 
 .thumbnail {
   width: 16.06%;
