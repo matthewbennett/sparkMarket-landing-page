@@ -208,6 +208,19 @@ var stickyHeader = {
 
   };
 
+  var gallery = {
+    init:function() {
+      this.switchPic();
+    },
+
+    switchPic:function() {
+      $("#thumbPic").click(function(){
+        var src = $(this).attr('src');
+        $("#mainDisplay").fadeOut();
+      });
+    }
+  };
+
  
 
   (function() {
@@ -217,6 +230,7 @@ var stickyHeader = {
     tabs.init();
     postComment.init();
     slider.init();
+    gallery.init();
 
   }()); 
 
