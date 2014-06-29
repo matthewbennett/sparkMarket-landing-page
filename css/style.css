@@ -614,6 +614,39 @@ Campaign section
   list-style-type: none;
 }
 
+.gallery {
+  width: 110%;
+  height: 450px;
+  float: right;
+  margin-right: -35px;
+  margin-top: 35px;
+}
+
+.displayedPicture {
+  float: left;
+  margin-bottom: -34px;
+  width: 100%;
+  height: 80%;
+  border-bottom: 5px solid #fff;
+  /* border-right: 1px solid #fff; */
+  background-color: rgba(0,0,0,0.04);
+}
+
+.thumbnail {
+  width: 16.06%;
+  height: 19%;
+  float: left;
+  margin-right: 5px;
+  /* margin-top: -29px; */
+  margin-top: 5px;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+
+}
+
 .data {
   width: 35%;
   height: 100%;
@@ -710,11 +743,12 @@ Campaign section
 }
 
 .summary {
-  width: 60%;
+  width: 70%;
   overflow: visible;
   height: 100px;
   display: block;
   float: right;
+  margin-right: -55px;
 }
 
 .summaryTitle {
@@ -731,7 +765,7 @@ Campaign section
 
 .campaignSummary p {
   margin-top: 20px;
-  font-size: 17px;
+  font-size: 20px;
   color: #504D4D;
 }
 
@@ -759,47 +793,11 @@ canvas {
   display: block;
 }
 
-.gallery {
-  list-style-type: none;
-  width: 300px;
-  height:300px;
-  background-color: blue;
-}
-
-.gallery li{
-  float: left;
-  width: 33.33%;
-  height: 30%;
-
-}
-
-
-.gallery li:nth-child(1){
-  width: 100%;
-  height: 70%;
-
-}
-
-.gallery li:nth-child(1) img {
-  width: 98%;
-  height: 98%;
-  border: 2px solid #fff;
-  display: block;
-  margin: 0 auto;
-}
-
-.gallery li img {
-  width: 94%;
-  height: 94%;
-  border: 2px solid #fff;
-  display: block;
-  margin: 0 auto;
-}
 
 .campaignSummary{
   width: 80%;
-  height: 900px !important;
-  margin: 0 auto;
+  height: 950px !important;
+  margin: -40px auto;
 }
 
 .campaignProfile {
