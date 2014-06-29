@@ -168,6 +168,13 @@ var stickyHeader = {
       $(".slide img").css("width",$(window).width());
       //show first slide 
       $("#slide"+currentSlide).show();
+      //switch slide auto 
+      setInterval(
+          function() 
+          {
+            $("#right").trigger("click");
+
+          }, 3000);
       //on right arrow click 
       $("#right").click(function(){
         $("#slide"+nextSlide).css("left","-1500px");
@@ -236,9 +243,41 @@ var stickyHeader = {
     }
   };
 
+var BannerTitle = {
+  init:function() {
+    this.citySwitch();
+  },
+
+
+
+  citySwitch:function(){
+    var counter = 0;
+    setInterval(
+          function() 
+          {
+            var cities = ["Atlanta","Savannah","Athens"];
+            $("#city").fadeOut("slow");
+            var insert = '<span id="city">'+cities[counter]+'</span>';
+            counter++;
+            if(counter > 2){counter =0;}
+            setTimeout(
+              function() 
+              {
+
+                $("#city").remove();
+                $(insert).appendTo(".bannerTitle");
+                $("#city").fadeIn("slow");
+
+              }, 400);
+
+          }, 3000);
+  }
+};
+
  
 
   (function() {
+    BannerTitle.init();
     setBanner.init();
     stickyHeader.init();
     showInfo.init();
