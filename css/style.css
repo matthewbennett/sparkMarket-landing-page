@@ -1078,6 +1078,7 @@ border-radius: 5px;
   position: absolute;
   left: 0;
   right: 0;
+  display: none;
 }
 
 
@@ -1087,9 +1088,6 @@ border-radius: 5px;
   width: 1410px;
 }
 
-#slide2 {
-  display: none;
-}
 
 footer {
   overflow: hidden;

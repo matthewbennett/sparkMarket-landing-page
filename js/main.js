@@ -158,14 +158,16 @@ var stickyHeader = {
     },
 
     slide:function(){
-      var numberOfSlides = 2;
+      var numberOfSlides = 3;
       var currentSlide = 1;
       var nextSlide = 2;
-      var lastSlide = 1;
+      var lastSlide = 3;
       //set arrow position 
       $("#right").css("left",$(window).width() - 40);
       //set slide width
       $(".slide img").css("width",$(window).width());
+      //show first slide 
+      $("#slide"+currentSlide).show();
       //on right arrow click 
       $("#right").click(function(){
         $("#slide"+nextSlide).css("left","-1500px");
@@ -181,6 +183,7 @@ var stickyHeader = {
           {
             $("#slide"+currentSlide).hide();
             //update variables 
+            lastSlide = currentSlide;
             currentSlide = nextSlide;
             nextSlide = nextSlide+1;
             if(nextSlide > numberOfSlides) {
@@ -191,6 +194,7 @@ var stickyHeader = {
       //on left arrow click 
       $("#left").click(function(){
         $("#slide"+lastSlide).show();
+        $("#slide"+lastSlide).css("left","1500px");
         $("#slide"+currentSlide).animate({
             "left":"-1500px",
           }, 500);
@@ -200,8 +204,13 @@ var stickyHeader = {
         setTimeout(
           function() 
           {
-            $("#slide"+currentSlide).hide();
-            //upda
+            nextSlide = currentSlide;
+            currentSlide = lastSlide;
+            lastSlide = lastSlide -1;
+            if(lastSlide < 1) {
+              lastSlide = numberOfSlides;
+            }
+
           }, 501);
       });
     }
