@@ -33,15 +33,18 @@ body {
 
 #city {
   color: #fff;
-  font-weight: 500 !important;
+  font-weight: 300 !important;
 }
 .navList {
-  background-color:transparent;
+  background-color:rgba(0,0,0,0.5);
   width: 100%;
   height: 50px;
   margin-bottom: 15%;
-  position: absolute;
-  top: 528px;
+  position: fixed;
+}
+
+.navList img {
+  width: 140px;
 }
 
 .navListStay {
@@ -135,7 +138,7 @@ body {
 .funded {
   background-color: #FBFBFB;
   width: 100%;
-  height: 450px;
+  height: 225px;
   border-bottom: 1px solid rgba(204, 204, 204, 0.5);
 }
 
@@ -179,7 +182,6 @@ About section
 .about li {
   width: 33.33%;
   float: left;
-  padding-top: 40px;
 }
 
 .about li h1 {
@@ -310,8 +312,8 @@ projects section
 }
 
 .projectPicture {
-  width: 275px;
-  height: 275px;
+  width: 275px !important;
+  height: 275px !important;
   border: 5px solid #FFF;
   border-radius: 100%;
   display: block;
@@ -499,14 +501,14 @@ footer h3 {
   float: left;
   margin-left: 20px;
 }
-/*
-span {
+
+footer span {
   color: #fff;
   float: left;
   text-align: center;
   margin-left: 10px;
 }
-*/
+
 
 .mover {
   color: transparent;
@@ -1128,3 +1130,106 @@ footer {
   -o-background-size: cover;
   background-size: cover;
 }
+
+/***************************
+****************************
+sign in page 
+****************************
+***************************/
+
+.loginBlock {
+width: 47%;
+height: 400px;
+margin: 0 auto;
+display: block;
+padding-top: 75px;
+overflow: hidden;
+
+}
+
+
+.loginBlock img {
+  display: block;
+  margin: 0 auto;
+  width: 221px;
+}
+
+.loginBlock textarea {
+  width: 240px;
+  height: 30px;
+  resize:none;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 17px;
+  color: #504D4D;
+  line-height: 30px;
+  font-size: 17px;
+  padding-left: 5px;
+  border-radius: 5px;
+}
+
+.glow {
+  border:3px solid #F7C835 ;
+}
+.signInButton {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #E9B30A;
+  border-radius: 5px;
+  background-color: #F7C835;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.loginBlock p{
+  text-align: center;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.loginBlock ul {
+  list-style-type: none;
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+
+}
+
+.loginBlock li {
+  width: 49%;
+  float: left;
+}
+
+.socialSign {
+  width: 210px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.socialSign i {
+  margin-right: 10px;
+}
+
+#fbSign {
+  background-color: #3B5998;
+
+}
+
+#inSign {
+  background-color: #4875B4;
+}
+
+.loginBlock li:first-child {
+  border-right: 1px solid #ccc;
+}
+
+
+

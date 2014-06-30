@@ -25,13 +25,13 @@ var setBanner = {
   },
 
   bannerSize:function() {
-    var viewportHeight = $(window).height();
+    var viewportHeight = $(window).height() / 2;
     var stick = viewportHeight -65;
-    $(".banner").css("height",viewportHeight);
-    $(".navList").css("top",stick);
+    $(".banner").css("height",viewportHeight + 100);
   }
 };
 
+/*
 var stickyHeader = {
     init:function() {
       this.stick();
@@ -57,7 +57,7 @@ var stickyHeader = {
     }
   };
 
-
+*/
 
   var showInfo = {
     init:function() {
@@ -168,13 +168,6 @@ var stickyHeader = {
       $(".slide img").css("width",$(window).width());
       //show first slide 
       $("#slide"+currentSlide).show();
-      //switch slide auto 
-      setInterval(
-          function() 
-          {
-            $("#right").trigger("click");
-
-          }, 3000);
       //on right arrow click 
       $("#right").click(function(){
         $("#slide"+nextSlide).css("left","-1500px");
@@ -274,12 +267,13 @@ var BannerTitle = {
   }
 };
 
+
  
 
   (function() {
     BannerTitle.init();
     setBanner.init();
-    stickyHeader.init();
+    //stickyHeader.init();
     showInfo.init();
     tabs.init();
     postComment.init();
