@@ -65,17 +65,18 @@ var stickyHeader = {
     },
 
     info:function() {
-      $(".infoLi").mouseenter(function(){
-        var block = $(this).attr("data-id");
-        if(block == 0) { $(".aboutInfo0").show();}
-        if(block == 1) { $(".aboutInfo1").show();}
-        if(block == 2) { $(".aboutInfo2").show();}
-      });
-      $(".infoLi").mouseleave(function(){
-        $(".aboutInfo0").fadeOut("fast");
-        $(".aboutInfo1").fadeOut("fast");
-        $(".aboutInfo2").fadeOut("fast");
-      });
+      $('.infoLi').hover(
+          function(){ 
+            var block = $(this).attr("data-id");
+            if(block == 0) { $(".aboutInfo0").slideDown();}
+            if(block == 1) { $(".aboutInfo1").slideDown();}
+            if(block == 2) { $(".aboutInfo2").slideDown();}
+          
+
+         },
+          function(){ $(".hideInfo").slideUp(); }
+    )
+    
     }
   };
 
@@ -267,6 +268,74 @@ var BannerTitle = {
   }
 };
 
+var projectSlider = {
+  init:function() {
+    this.NextProject();
+  },
+
+  NextProject:function() {
+    var numberOfProjects = 5;
+    var currentSlide = 1;
+      $("#project1").show();
+      $("#project2").show();
+      $("#project3").show();
+      $("#project4").hide();
+      $("#project5").hide();
+      $("#rightProjects, #leftProjects").click(function(){
+        if(currentSlide == 1)
+        {
+          for(var i = 0; i < 3; i++)
+          {
+            $("#project"+i).hide();
+          }
+          for(var x = 3; x < 6; x++)
+          {
+            $("#project"+x).fadeIn(100);
+          }
+
+          currentSlide = 2;
+        }
+        else
+        {
+          for(var i = 3; i < 6; i++)
+          {
+            $("#project"+i).hide();
+          }
+          for(var x = 0; x < 3; x++)
+          {
+            $("#project"+x).fadeIn(100);
+          }
+          currentSlide = 1;
+        }
+      });
+  }
+};
+
+var letsMakeItHappen = {
+  init:function() {
+    this.check();
+  },
+
+  check:function() {
+    $("#check1").click(function(){
+      var clicked = 1;
+      if(clicked == 1){
+      var insert = '<i id="checkMark" class="fa fa-check"></i>';
+      $(insert).appendTo("#check1");
+      clicked = 0;
+      }else{
+        $("#checkMark").remove();
+        clicked = 1;
+      }
+
+    });
+    $("#check2").click(function(){
+      var insert = '<i class="fa fa-check"></i>';
+      $(insert).appendTo("#check2");
+    });
+  }
+
+};
 
  
 
@@ -274,6 +343,8 @@ var BannerTitle = {
     BannerTitle.init();
     setBanner.init();
     //stickyHeader.init();
+    letsMakeItHappen.init();
+    projectSlider.init();
     showInfo.init();
     tabs.init();
     postComment.init();
