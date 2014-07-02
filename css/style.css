@@ -130,7 +130,7 @@ body {
 
 
 .banner {
-  background: url(../img/sparkBG1.jpg) no-repeat center center fixed;
+  background: url(../img/Atl.png) no-repeat center center fixed;
   width: 100%;
   height: 1000px;
   -webkit-background-size: cover;
@@ -285,7 +285,8 @@ projects section
 
 .projectList li {
   float: left;
-  width: 479px;
+  width: 33.33%;
+  min-width: 360px;
   height: 50%;
 }
 
@@ -1143,6 +1144,15 @@ border-radius: 5px;
 }
 
 .slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.photo{
   width: 100%;
   height: 100%;
   position: absolute;

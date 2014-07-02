@@ -337,12 +337,47 @@ var letsMakeItHappen = {
 
 };
 
- 
+ var photoSlider = {
+  init:function() {
+    this.switcher();
+  },
+
+  switcher:function() {
+    $("#photo1").show();
+    var counter = 1;
+    var currentSlide = $("#photo1");
+    setInterval(
+          function() 
+          {
+            if(counter == 1){
+           $(currentSlide).fadeOut(200);
+           $("#photo2").fadeIn(200);
+           currentSlide = $("#photo2");
+           counter = 2;
+           }
+           else if(counter == 2) {
+            $(currentSlide).fadeOut(200);
+            $("#photo3").fadeIn(200);
+            currentSlide = $("#photo3");
+            counter = 3;
+           }
+           else
+           {
+            $(currentSlide).fadeOut(200);
+            $("#photo1").fadeIn(200);
+            counter = 1;
+           }
+
+
+          }, 5000);
+  }
+ };
 
   (function() {
     BannerTitle.init();
     setBanner.init();
     //stickyHeader.init();
+    photoSlider.init();
     letsMakeItHappen.init();
     projectSlider.init();
     showInfo.init();
