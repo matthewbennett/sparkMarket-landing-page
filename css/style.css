@@ -1408,7 +1408,6 @@ max-height: 1340px;
 
 .infoBlock {
   width: 90%;
-  height:650px;
   display: block;
   margin: 0 auto 5px;
   overflow: visible;
@@ -1437,7 +1436,124 @@ max-height: 1340px;
 
 .footer {
   width: 100%;
-  height: 200px;
+  height: 225px;
   background-color: #e67e22;
+  border-top: 1px solid #ccc;
 }
 
+.subFooterInfo {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  margin-left: 100px;
+  float: left;
+}
+
+.subFooterInfo li {
+  width: 45%;
+  height: 100%;
+  float: left;
+}
+
+.subFooterInfo h4 {
+  color: #fff;
+  margin-top: 32px;
+}
+
+.loginBlockShort {
+  height: 662px !important;
+}
+
+.footer h1 {
+  color: #fff;
+  margin-left: 27px;
+  display: -webkit-inline-box;
+  margin-top: 20px;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.textInputFooter {
+  margin-top: 20px;
+
+  background: #FAFAFA;
+  width: 340px;
+  height: 40px;
+  display: block;
+  text-align: left;
+  line-height: 40px;
+  font-size: 20px;
+  padding-left: 10px;
+  border: 0px;
+  resize: none;
+  color:rgba(0, 0, 0, 0.42);
+  float: left;
+}
+
+.send {
+  width: 44px;
+  height: 44px;
+  background-color: #4c5156;
+  display: -webkit-inline-box;
+  margin-top: 20px;
+}
+
+.send i {
+  color: #fff;
+  display: block;
+  margin: 5px auto;
+}
+
+.socialFooter {
+  width: 30%;
+  height: 100%;
+  background-color: blue;
+  display: block;
+}
+
+.socialIcon {
+  width: 75px;
+  height: 75px;
+  background-color: rgba(209, 114, 29, 0.56);
+  margin-top: 20px;
+  margin-left: 30px;
+  float: left;
+  display: block;
+}
+
+.socialIconLeft {
+  margin-left: 70px !important;
+}
+
+.footerUl {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+}
+
+.footerUl li {
+  width: 29.33%;
+  height: 100%;
+  float: left;
+}
+
+.footerUl li:nth-child(1) {
+  width: 38% !important;
+}
+
+.socialIcon i {
+  color: #fff;
+  margin: 15px auto;
+  display: block;
+  text-align: center;
+}
+
+.footerTop {
+  margin-top: 100px;
+}
+
+
+  
