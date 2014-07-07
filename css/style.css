@@ -244,7 +244,7 @@ About section
 .hideInfo {
   width: 98%;
   height: 210px;
-  background-color: rgba(141, 198, 63, 0.89);
+  background-color: rgba(0, 0, 0, 0.69);
   position: absolute;
   top: 0;
   color: #fff;
@@ -1557,4 +1557,42 @@ max-height: 1340px;
 
 .largeFeild {
   height: 200px !important;
+}
+
+.team {
+  float: left;
+  border-radius: 100%;
+  margin-right: 30px; 
+}
+
+.meetTheTeam {
+  border: 0px !important;
+  margin-top: 130px !important;
+}
+
+.meetTheTeamP {
+  margin-bottom: 100px;
+}
+
+.meetTheTeam span {
+  color: #e67e22;
+}
+
+.meetTheTeamSpecial span {
+  color: #e67e22;
+}
+
+.meetTheTeamSpecial {
+  border: 0px !important;
+  margin-top: 50px !important;
+}
+
+.teamHeader {
+  text-align: center !important;
+}
+
+.keepText {
+  width: 186px;
+  height: 250px;
+  float: left;
 }
