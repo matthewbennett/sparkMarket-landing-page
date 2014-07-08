@@ -1414,6 +1414,15 @@ max-height: 1340px;
   padding-top: 100px;
 }
 
+.infoBlockExtended {
+  width: 90%;
+  display: block;
+  margin: 0 auto 5px;
+  overflow: visible;
+  padding-top: 100px;
+  height: 1300px;
+}
+
 .infoBlock h1 {
   color: #4c5156;
   margin-bottom: 25px;
@@ -1563,6 +1572,7 @@ max-height: 1340px;
   float: left;
   border-radius: 100%;
   margin-right: 30px; 
+  margin-top: -18px;
 }
 
 .meetTheTeam {
@@ -1595,4 +1605,26 @@ max-height: 1340px;
   width: 186px;
   height: 250px;
   float: left;
+}
+
+.keepTextLong {
+  margin-left: -186px;
+}
+
+.personWrapper {
+  width: 100%;
+  height: 105px;
+}
+
+.thankYou {
+  text-align: center !important;
+}
+
+.thankYouP {
+  font-size: 20px;
+  text-align: center !important;
+}
+
+.infoBlockMid {
+  height: 500px !important;
 }
