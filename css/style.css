@@ -31,6 +31,64 @@ body {
   margin-left: 25%;
 }
 
+.noTag {
+  border: 0px !important;
+  margin-bottom: 20px !important;
+}
+
+.extra {
+  margin-bottom: 50px !important;
+}
+
+.extraLong {
+  margin-bottom: 80px !important;
+}
+.postWrapperLong {
+  width: 100%;
+height: 200px;
+background-color: rgba(0,0,0,0.2);
+/* margin: 0 auto; */
+display: block;
+border: 1px solid rgba(0,0,0,0.2);
+padding-top: 30px;
+border-radius: 5px;
+margin-top: 15px;
+}
+
+.commentsInputLong {
+width: 95%;
+height: 81%;
+background-color: #fff;
+border: 0px;
+resize: none;
+margin: 0 auto;
+display: block;
+font-size: 20px;
+}
+
+.styledSelectFree {
+  width: 250px !important;
+  height: 45px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background: url("../img/select_arrow.png") no-repeat ;
+  background-position: top 18px right 18px;
+  float: none !important;
+}
+
+.continue {
+  width: 180px;
+  height: 40px;
+  background-color: #4c5156;
+  display: block;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  float: right;
+  margin-top: -80px;
+}
+
 #city {
   color: #fff;
   font-weight: 300 !important;
@@ -111,6 +169,9 @@ body {
   color: #fff;
 }
 
+header {
+  overflow: auto;
+}
 
 .headerStick {
   position: fixed;
@@ -654,6 +715,7 @@ Campaign section
 .campaignTitle {
   width: 100%;
   height: 200px;
+  margin-top: 150px;
 }
 
 .campaignTitle h1 {
@@ -1051,10 +1113,10 @@ canvas {
 .postWrapper {
 width: 90%;
 height: 300px;
-background-color: rgba(221, 217, 126, 0.26);
+background-color: rgba(0,0,0,0.2);
 margin: 0 auto;
 display: block;
-border: 1px solid #EEE5E5;
+border: 1px solid rgba(0,0,0,0.2);
 padding-top: 15px;
 border-radius: 5px;
 }
