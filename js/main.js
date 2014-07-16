@@ -433,13 +433,28 @@ var letsMakeItHappen = {
       $("[data-id="+id+"]").slideDown();
     });
     $(".question").mouseleave(function(){
-      
+
       $(".answer[data-id="+id+"]").slideUp();
     });
   }
  };
 
+ var addVideo = {
+  init:function() {
+    this.addVid();
+  },
+
+  addVid:function() {
+    setTimeout(
+          function() 
+          {
+            $("iframe").attr("src","http://player.vimeo.com/video/97304185");
+          }, 100);
+  }
+ };
+
   (function() {
+    addVideo.init();
     faq.init();
     confirm.init();
     BannerTitle.init();
