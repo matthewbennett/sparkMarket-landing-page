@@ -87,12 +87,27 @@ font-size: 20px;
 .disclaimer {
   width: 100%;
   height: 150px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.feildWrapper h6 {
+  float: left;
+font-size: 16px;
+width: 50%;
+margin-bottom: 10px;
+}
+
+.colored {
+  background-color: #4c5156;
+  color: #fff !important;
+  text-align: center;
 }
 
 .disclaimer {
-  width: 90%;
+  width: 100%;
 margin: auto;
 font-size: 11px;
+padding-top: 20px;
 }
 
 .continue {
@@ -235,7 +250,7 @@ header {
 
 
 .banner {
-  background: url(../img/sparkBG1.jpg) no-repeat center center fixed;
+  background: url(../img/atl2.png) no-repeat center center fixed;
   width: 100%;
   height: 1000px;
   -webkit-background-size: cover;
@@ -917,13 +932,18 @@ Campaign section
   border-bottom: 1px solid #4c5156;
 }
 
+
 .reward h5 {
   padding-top: 8px;
   text-align: center;
   font-size: 17px;
   font-weight: 500;
   margin-bottom: 10px;
-  color: #F7C835 !important;
+  color: #4c5156 !important;
+}
+
+.reward span {
+
 }
 
 .reward p {
@@ -1733,7 +1753,7 @@ max-height: 600px;
 .socialIcon {
   width: 75px;
   height: 75px;
-  background-color: rgba(209, 114, 29, 0.56);
+  background-color: rgba(209, 204, 200, 0.56);
   margin-top: 20px;
   margin-left: 30px;
   float: left;
