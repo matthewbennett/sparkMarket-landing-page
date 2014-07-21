@@ -1700,7 +1700,7 @@ max-height: 1340px;
 
 .subFooterInfo h4 {
   color: #fff;
-  margin-top: 32px;
+  margin-top: 8px;
 }
 
 .loginBlockShort {
@@ -2116,15 +2116,30 @@ margin-bottom: 18px !important;
 }
 
 .disWidth {
-  width: 90%;
-  margin: 50px auto;
+  width: 79%;
+  /* margin: 50px auto; */
   display: block;
+  margin-left: 94px;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-top: 32px;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+}
+
+.footerLabel {
+  width: 131px;
 }
 
 .footerMobile {
   display: none;
 }
 
+.reverseMargin {
+  margin-top: -27px;
+}
 canvas {
   width: 130px !important;
 height: 130px !important;
