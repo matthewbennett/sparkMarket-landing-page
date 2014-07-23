@@ -94,6 +94,18 @@ font-size: 20px;
   float: none !important;
 }
 
+.cta {
+  width: 180px;
+  height: 40px;
+  background-color: #3a539b;
+  margin: 140px auto;
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 17px;
+  color: #fff;
+}
+
 .disclaimer {
   width: 100%;
   height: 150px;
@@ -147,6 +159,7 @@ padding-top: 20px;
   margin-bottom: 15%;
   position: fixed;
   z-index: 2;
+
 }
 
 .navList img {
@@ -352,16 +365,21 @@ About section
 }
 
 .icon {
-  width: 75px;
-  margin: 40px auto;
+  width: 140px;
+  margin: 12px auto;
   display: block;
 }
 .weird {
-  margin-bottom: 72px;
+  width: 182px;
+  margin-bottom: -40px;
 }
 .check {
   margin-left: 40px;
   margin-top: 40px;
+}
+
+.mobileIconText {
+  display: none;
 }
 
 .marker {
@@ -1778,6 +1796,7 @@ max-height: 600px;
   width: 100%;
   height: 100%;
   list-style-type: none;
+  overflow: hidden;
 }
 
 .footerUl li {
@@ -2135,6 +2154,10 @@ margin-bottom: 18px !important;
 
 .footerMobile {
   display: none;
+}
+
+.bottomHeader {
+  margin-top: 58px !important;
 }
 
 .reverseMargin {
