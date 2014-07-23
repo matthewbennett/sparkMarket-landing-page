@@ -2149,12 +2149,12 @@ margin-bottom: 18px !important;
 .footer h3 {
   color: #fff;
   margin-top: 32px;
-  border-bottom: 1px solid #fff;
-  text-align: center;
 }
 
 .footerLabel {
   width: 131px;
+  text-align: left;
+  border-bottom: 1px solid #fff;
 }
 
 .footerMobile {
